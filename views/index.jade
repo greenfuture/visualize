@@ -1,5 +1,94 @@
 extends layout
 
 block content
+  #index-banner.section.no-pad-bot
+    .container
+      br
+      br
+      h1.header.center.white-text.text-upper
+        | HELP America go
+        span.hero-type Green
+        span.typed-cursor |
+      .row.center
+        p.flow-text.white-text
+          | The U.S. goes through 100 billion plastic shopping bags annually.
+      .row.center
+        // Button that handles sign-in/sign-out
+        a.btn-large.waves-effect.waves-light.green.darken-4.text-upper(href='#') Take the Pledge
+      br
+      br
+  .grey.lighten-4.services.z-depth-2
+    .container
+      .row
+        .col.s12.center
+          br
+          h4.light-green-text.text-darken-4 Take the pledge for a green future!
+          p.flow-text If one person took the pledge to stop using plastic bags they could prevent an average of 3,000 plastic bags from entering our oceans and landfills*.What if you could help convince 100 of your Facebook friends to do the same? That number jumps to 300,000. If they told their friends? That number skyrockets to 30 million!
+        .col.s4
+          .center.promo.promo-example
+            i.material-icons speaker_notes
+            h5.light-green-text.text-darken-4 Take the Pledge
+            p.light.center  Take the pledge to work towards a green future.
+        .col.s4
+          .center.promo.promo-example
+            i.material-icons settings_input_antenna
+            h5.light-green-text.text-darken-4 Share on Social
+            p.light.center Leverage your social network to help conservationism go viral.
+        .col.s4
+          .center.promo.promo-example
+            i.material-icons insert_chart
+            h5.light-green-text.text-darken-4 Make an Impact
+            p.light.center Track your effect on the planet using our leaderboard.
+
+  .green.darken-4.z-depth-2
+    .container
+      .row
+        .col.s12.m10.offset-m1
+          br
+          br
+          h3.center.grey-text.text-lighten-3 Take the Pledge
+          p.flow-text.center.grey-text.text-lighten-3 Pledge to fight for a greener future for our planet.
+          .row
+            .input-field.col.s12.m6
+              i.material-icons.prefix.white-text account_circle
+              input#icon_prefix.validate.white-text(type='text')
+              label.white-text(for='icon_prefix') Name
+            .input-field.col.s12.m6
+              i.material-icons.prefix.white-text phone
+              input#icon_telephone.validate.white-text(type='tel')
+              label.white-text(for='icon_telephone') Telephone
+            .input-field.col.s12.m6
+              i.material-icons.prefix.white-text email
+              input#email.validate.white-text(type='email')
+              label.white-text(for='email') Email
+            .input-field.col.s12.m6
+              i.material-icons.prefix.white-text business
+              input#company.validate.white-text(type='text')
+              label.white-text(for='company') City / State
+          p.grey-text.text-lighten-1.center
+            | Sign up to receive selected communications from Green Future LLC. and its affiliates.
+            br
+            |                     Your information will be used in accordance with Green Future's privacy policy.
+            br
+            |                     You may opt out at any time.
+          p.center
+            button#quickstart-sign-in.btn-large.waves-effect.waves-light.amber.darken-2.black-text.text-upper.modal-trigger(href='#modal1')
+              | Sign up
+          br
+          br
+  .omg
+    .row
+      .col.s12.m6
+          h3.center Great Pacific garbage patch
+          p.flow-text The Great Pacific garbage patch is a gyre of marine debris particles in the central North Pacific Ocean. It is located roughly between 135°W to 155°W and 35°N and 42°N.[1] The patch extends over an indeterminate area, with estimates ranging very widely depending on the degree of plastic concentration used to define the affected area.
+      .col.s12.m6
+        iframe(width='100%', height='520', frameborder='0', src='https://juanitasoranno.carto.com/viz/5207dd74-a94f-11e6-b2c0-0e3ff518bd15/embed_map', allowfullscreen='', webkitallowfullscreen='', mozallowfullscreen='', oallowfullscreen='', msallowfullscreen='')
+    .row.grey.lighten-4.z-depth-2
+      .col.s12
+        h3.center Plastic Consumption in America
+      .col.s12
+        iframe(width='100%', height='520', frameborder='0', src='https://juanitasoranno.carto.com/viz/723c1f76-a957-11e6-acb1-0e05a8b3e3d7/embed_map', allowfullscreen='', webkitallowfullscreen='', mozallowfullscreen='', oallowfullscreen='', msallowfullscreen='')
+
+
   h1= title
   p Welcome to #{title}
